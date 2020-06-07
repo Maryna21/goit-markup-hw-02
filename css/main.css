@@ -10,7 +10,7 @@
 
 main{
     background-color: var(--primary-white-color);
-    color: var(--primary-text-color)
+    color: var(--primary-text-color);
 
     font-family: Roboto; sans-serif;
     font-style: normal;
@@ -41,9 +41,10 @@ main{
     }
 
 .title{
-    color: var(--title-color)
+    color: var(--title-color);
     font-style: normal;
     font-weight: bold;}
+
 .title.second{
     font-size: 36px;
     line-height: 1.16;
@@ -70,11 +71,18 @@ main{
         color: var(--accent-color);}
 
     /* Контакты */
-    .link.contacts{
+    .mail{
         color: var(--primary-text-color);
     }
-    .link.contacts:hover, 
-    .link.contacts:focus{
+    .tel{
+        color: var(--primary-text-color);
+    }
+    .mail:hover, 
+    .mail:focus{
+        color: var(--accent-color);
+    }
+    .tel:hover, 
+    .tel:focus{
         color: var(--accent-color);
     }
      /* site-nav */
@@ -104,9 +112,19 @@ main{
 }
 /*Постоянные клиенты*/
 
+/* Наша команда */
+.social-link{
+    color: var(--primary-text-color);  
+    text-decoration: none;
+}
+.social-link:hover, 
+.social-link:focus{
+    color: var(--accent-color);
+}
+
    /*Footer*/  
 .page-footer{
-    color: var(--primary-white-color)
+    color: var(--primary-white-color);
     background-color: var(--footer-black-color);
 
     font-family: Roboto; sans-serif;
@@ -116,6 +134,7 @@ main{
     line-height: 1.71;
 }
 .logo-footer{
+    color: var(--primary-white-color);
     font-family: Raleway; sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -123,11 +142,29 @@ main{
     line-height: 1.18;
     text-decoration: none;
 }
+.logo-footer .first{
+ color: var(--accent-color);   
+}
 .address-footer{
     font-style: normal;
 }
 .contact-footer{
     color: rgba(255, 255, 255, 0.6);
+}
+.contact-footer:hover, 
+.contact-footer:focus{
+        color: var(--accent-color);
+    }
+.footer-social.link{  
+    list-style: none;
+
+}
+.footer-social.link a{
+    color: var(--primary-white-color);
+    text-decoration: none;
+}
+.footer-social.link a:hover, .footer-social.link a:hover{
+    color: var(--accent-color);
 }
 .copyright{
     font-size: 12px;
@@ -163,7 +200,7 @@ main{
     line-height: 1.88;   
 }
 .project-text{ 
-color: var(--primary-text-color);  
-font-size: 18px;
-line-height: 1.56;
+    color: var(--primary-text-color);  
+    font-size: 18px;
+    line-height: 1.56;
 }
